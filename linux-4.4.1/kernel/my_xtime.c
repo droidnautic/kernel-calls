@@ -11,7 +11,7 @@ asmlinkage int sys_my_xtime(struct timespec *current_time){
         return -EFAULT;
     }else{
         getnstimeofday(current_time);
-        printk(KERN_INFO "Current Time (nanoseconds): %ld", current_time->tv_nsec);
+        printk(KERN_INFO "Current Time since epoch (total nanoseconds): %lld%.9ld", (long long)current_time->tv_sec, current_time->tv_nsec);
         return 0;
     }
 }
