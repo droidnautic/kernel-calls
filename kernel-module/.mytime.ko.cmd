@@ -1,0 +1,1 @@
+cmd_/home/csvb/kernel-calls/kernel-module/mytime.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/csvb/kernel-calls/kernel-module/mytime.ko /home/csvb/kernel-calls/kernel-module/mytime.o /home/csvb/kernel-calls/kernel-module/mytime.mod.o
